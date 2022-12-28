@@ -1,0 +1,45 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+.u-text--center {
+    text-align: center;
+}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+//------------------------------------------------------------
+//padding
+
+.u-padsp15 {
+    @include sp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.u-showhide {
+    display: block;
+    @include sp {
+        display: none;
+    } 
+}
+
+.u-hideshow {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
+.is-sp--only {
+    display: none;
+    @include sp {
+        display: inline;
+    }
+}

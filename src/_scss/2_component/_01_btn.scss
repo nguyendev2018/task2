@@ -1,0 +1,44 @@
+.c-btn {
+    &__second {
+        background: $second-color;
+        border-radius: 28px;
+        border: 1px solid $second-color;
+        color: $white;
+        width: 308px;
+        height: 55px;
+        font-size: 2.4rem;
+        line-height: 1;
+        cursor: pointer;
+        letter-spacing: -1px;
+        padding-left: 43px;
+        display: flex;
+        align-items: center;
+        @include sp {
+            width: 200px;
+            height: 35px;
+            font-size: 1.5rem;
+            padding-left: 25px;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    &__primary {
+        background-image: url("/assets/img/button/img-btn.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 198px;
+        height: 40px;
+        cursor: pointer;
+        color: $white;
+        display: block;
+
+        &--text {
+            letter-spacing: 3.5px;
+            line-height: 3;
+            padding-left: 1px;
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

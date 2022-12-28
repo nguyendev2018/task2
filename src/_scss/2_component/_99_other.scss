@@ -1,0 +1,57 @@
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.p-leaf {
+    pointer-events: none;
+
+    &__top,
+    &__right {
+        position: fixed;
+        z-index: 6;
+        transition: all 0.5s linear;
+        
+    }
+
+    &__top {
+        top: 0;
+        left: 687px;
+        transition: all 0.5s linear;
+        width: 302px;
+        height: 213px;
+        @include sp {
+            width: 114px;
+            height: auto;
+            top: 0;
+            left: 95px;
+        }
+    }
+
+    &__right {
+        top: 468px;
+        right: -27px;
+        width: 267px;
+        height: 352px;
+        @include tab {
+            width: 150px;
+        }
+        @include sp {
+            width: 89px;
+            height: auto;
+            top: 489px;
+            right: -4px;
+            transform: rotate(-8deg);
+        }
+    }
+}
+
+.c-line {
+    width: 35px;
+    transform: translateX(17px);
+    border-bottom: 2px solid $black00;
+    @include sp {
+        transform: translateX(-4px);
+    }
+}

@@ -1,0 +1,10 @@
+
+
+
+
+.p-home {
+    margin-bottom: 100px;
+    @include sp {
+        margin-bottom: 60px;
+    }
+}

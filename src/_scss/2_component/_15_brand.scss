@@ -1,0 +1,82 @@
+
+.c-brand {
+    margin-top: 113px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @include sp {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 34px;
+    }
+}
+//ANCHOR title
+.c-brand__title {
+    font-size: 3rem;
+    line-height: 0.9;
+    color: #176b6a;
+    text-align: center;
+    margin-bottom: 51px;
+    @include sp {
+        font-size: 1.8rem;
+        letter-spacing: 1.6px;
+        line-height: 1.7;
+        margin-bottom: 21px;
+    }
+
+}
+
+.c-brand__linebr {
+    display: none;
+}
+
+.c-brand__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: -20px;
+    @include sp {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        margin-left: -25px;
+    }
+}
+
+.c-brand__item {
+    --width: 25%;
+    --spacing: 20px;
+    cursor: pointer;
+    display: block;
+    width: calc(var(--width) - var(--spacing));
+    margin-left: var(--spacing);
+    @include sp {         
+        --width: 50%;
+        --spacing: 25px;
+        margin-bottom: var(--spacing);
+    }
+
+    >img {
+        border-radius: 20px;
+        @include sp {
+            border-radius: 10px;
+        }        
+    }
+}
+
+.c-brand__bottom {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-top: 44px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    @include sp {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+        line-break: anywhere;
+        margin-top: -3px;
+    }
+}

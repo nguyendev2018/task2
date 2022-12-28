@@ -1,0 +1,545 @@
+.c-uses {
+    padding-top: 59px;
+    padding-left: 43.5px;
+    padding-right: 43.5px;
+    padding-bottom: 166px;
+    overflow: hidden;
+    @include tab {
+        padding-left: 50px;
+        padding-right: 59px;
+    }
+    @include sp {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+    }
+
+    &__boxtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: -55px;
+    }
+
+    &__boxcenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        &small {
+            font-size: 2rem;
+            line-height: 3;
+            letter-spacing: 2px;
+            margin-bottom: -13px;
+            margin-left: -7px;
+            @include sp {
+                font-size: 1.2rem;
+                letter-spacing: 0.1em;
+                margin-left: -2px;
+                margin-bottom: -6px;
+            }
+        }
+
+        &big {
+            font-size: 4.6rem;
+            line-height: 1;
+            letter-spacing: 9px;
+            @include sp {
+                font-size: 2rem;
+                letter-spacing: 4px;
+            }
+            
+        }
+    }
+
+    &__list {
+        @include tab {
+            max-width: 768px;
+            margin-top: -20px;
+            margin: 0 auto;
+        }
+    
+        &top,
+        &bottom {
+            display: flex;
+            flex-wrap: nowrap;
+            @include tab {
+                flex-wrap: wrap;
+                
+            }
+        }
+
+        &top {
+            margin-top: 2px;
+            @include tab {
+                margin-top: 100px;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            @include sp {
+                margin-top: 62px;
+            }
+        }
+
+        &bottom {
+         
+            margin-top: 70px;
+            @include tab {
+                margin-top: -16px;
+            }
+        }
+    }
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: max-content;
+        @include tab {
+            width: 50%;
+        }
+        @include sp {
+            width: max-content;
+        }
+  
+      
+
+       
+       
+       
+      
+    
+        &box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+   
+
+    .c-uses__itemimg {
+        position: relative;
+        z-index: 2;
+    }
+
+    .c-uses__itemtext {
+        line-height: 2;
+        letter-spacing: 0.1em;
+        position: relative;
+        border-bottom: 1px dashed #636363;
+        display: inline-block;
+        z-index: 1;
+        @include sp {
+            line-height: 1.5;
+        }
+    }
+
+}
+
+.c-uses__itembottle {
+    left: -1px;
+    @include sp {
+        left: 14px;
+        top: 42px;
+    }
+
+    .c-uses__textchild {
+        padding-left: 10px;
+    }
+
+    .c-uses__itemtext {
+        padding-left: 8px;
+        margin-left: -50px;
+        margin-bottom: -6px;
+        @include sp {
+            padding-left: 10px;
+            margin-left: -48px;
+            margin-bottom: -15px;
+            line-height: 1.3;
+        }
+    }
+
+    .c-uses__itemimg {
+        @include sp {
+            width: 125px;
+        }
+      
+    }
+}
+
+.c-uses__itemjar {
+    top: 61px;
+    left: 37px;
+    @include tab {
+        top: 0;
+        left: 0;
+    }
+    @include sp {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-top: 60px;
+        left: 80px;
+    }
+
+    img {
+        @include sp {
+            width: 36px;
+        }
+           
+    }
+
+    .c-uses__itemtext {
+        padding-left: 17px;
+        margin-left: -10px;
+        margin-bottom: 29px;
+        position: relative;
+        white-space: nowrap;
+        @include tab1200 {
+            width: 98px;
+            white-space: normal;
+        }
+        @include sp {
+            line-height: 1.4;
+            margin-bottom: 5px;
+            letter-spacing: 0.8px;
+            padding-right: 11px;
+            padding-left: 0;
+        }
+    }
+
+    &__textchild {
+        padding-left: 14px;
+    }
+}
+       
+    
+
+.c-uses__itemiron {
+    // left: -54px;
+    top: 63px;
+    right: -73px;
+    @include tab {
+        top: -2px;
+        right: 8px;
+        margin-top: 17px;
+    }
+    @include sp {
+        top: -4px;
+        right: -13px;
+        margin-top: 17px;
+    }
+
+    .c-uses {
+        &__item {
+            &img {
+                width: 83px;
+                @include sp {
+                    width: 45px;
+                    transform: scaleX(-1);
+                }
+                
+            }
+
+            &text {
+                padding-left: 18px;
+                margin-bottom: 34px;
+                @include tab1200 {
+                    width: 128px;
+                }
+                @include sp {
+                    padding-left: 0;
+                    margin-bottom: 35px;
+                    left: 0;
+                    bottom: -15px;
+                    letter-spacing: 0.1rem;
+                }
+            }
+        }
+            
+        &__textchild {
+            padding-left: 17px;
+        }
+    }
+}
+
+.c-uses__itemaerosol {
+    right: -58px;
+    @include tab {
+        right: 0;
+        margin-top: 60px;
+
+    }
+
+    @include sp {
+        margin-top: 0;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        margin-right: 0;
+        right: -11px;
+        top: 11px;
+          
+    }
+
+    img {
+        @include sp {
+            width: 126px;
+        }
+          
+    }
+
+    .c-uses {
+        &__itemimg {
+            margin-left: 96px;
+            @include sp {
+                width: 30px;
+                margin-left: 0;
+            }
+            @include tab {
+                margin-left: 40px;
+            }
+        }
+
+        &__textchild {
+            padding-left: 20px;
+        }
+
+        &__itemtext {
+            padding-left: 18px;
+            margin-left: -55px;
+            margin-top: 47px;
+            @include sp {
+                padding-left: 0;
+                padding-right: 5px;
+                left: 45px;
+                top: -7px;
+                letter-spacing: 0.8px;
+            }
+        }
+
+          
+    }
+}
+
+.c-uses__itembulb {
+    top: 32px;
+    left: 6%;
+
+    img {
+        width: 37px;
+    }
+    @include tab {
+        top: 0;
+        left: 0;
+    }
+    @include sp {
+        top: 42px;
+        left: 14px;
+    }
+
+    .c-uses {
+        padding-bottom: 169px;
+
+        &__item {
+            &img { 
+                width: 59px;
+                @include sp {
+                    width: 38px;
+                }
+                   
+                 
+            }        
+
+            &text {
+                margin-top: -44px;
+                position: relative;
+                padding-left: 6%;
+                margin-left: -6%;
+                margin-bottom: 0;
+                @include tab1200 {
+                    width: 100px;
+                }
+                @include tab {
+                    margin-left: -12px;
+                }
+                @include sp {
+                    margin-top: -4px;
+                    position: relative;
+                    padding-left: 9px;
+                    margin-left: 0;
+                    margin-bottom: 0;
+                    letter-spacing: 0.7px;
+                }
+            }
+        }
+
+        &__textchild {
+            padding-left: 12px;
+        }
+    }
+        
+}
+
+.c-uses__itemface {
+    top: 70px;
+    right: -11%;
+    @include tab {
+        top: 0;
+        left: 0;
+        margin-top: 60px;
+    }
+    @include sp {
+        top: 21px;
+        left: 78px;
+        margin-top: 60px;
+        flex-direction: row-reverse;
+   
+    }
+    // @include tab1200 {
+    //     width: 200px;
+    // }
+
+    .c-uses {
+        &__item {
+            &img {
+                top: -25px;
+                left: -36px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                @include sp {
+                    width: 137px;
+                    left: -56px;
+                }
+            }
+
+            &text {
+                margin-top: 40px;
+                position: relative;
+                margin-left: -92px;
+                padding-left: 47px;
+                @include  tab1200 {
+                    padding-left: 25px;
+                }
+                @include sp {
+                    margin-top: -20px;
+                    margin-left: 0;
+                    padding-left: 0;
+                    padding-right: 28px;
+                    letter-spacing: 1px;
+                }
+            }
+
+    
+        }
+
+        &__textchild {
+            padding-left: 47px;
+        }
+    }
+}
+
+.c-uses__itempillow {
+    top: 50px;
+    left: 99px;
+    flex-direction: row-reverse;
+    @include tab {
+        top: 0;
+        left: 0;
+        justify-content: flex-end;
+    }
+
+    @include sp {
+        top: 12px;
+        left: 22px;
+        flex-direction: row;
+    }
+    // @include tab1200 {
+    //     width: 200px;
+    // }
+
+    .c-uses {
+        &__item {
+            &img {
+                width: 127px;
+                @include sp {
+                    width: 63px;
+                }
+            }
+
+            &text {
+                left: 16px;
+                padding-right: 22px;
+                margin-top: -45px;
+                @include tab {
+                    left: 16px;
+                    padding-right: 22px;
+                    margin-top: -45px;
+                }
+                @include sp {
+                    padding-right: 0;
+                    padding-left: 10px;
+                    left: -5px;
+                    top: 14px;
+                    letter-spacing: 1px;
+                }
+                // @include tab1200 {
+                //     width: 100px;
+                // }
+            }
+        }
+        
+        &__textchild {
+            padding-right: 12px;
+        }
+    }
+}
+
+.c-uses__itembath {
+    left: 55px;
+    top: -33px;
+    flex-direction: row-reverse;
+    @include tab {
+        left: 0;
+        top: 0;
+    }
+    @include sp {
+        left: 74px;
+        top: 26px;
+    }
+
+    .c-uses {
+        &__item {
+            &img {
+                width: 162px;
+                @include sp {
+                    width: 82px;
+                }
+            }
+
+            &text {
+                padding-right: 30px;
+                margin-top: -50px;
+                left: 12px;
+                @include sp {
+                    padding-right: 21px;
+                    margin-top: 4px;
+                    left: 9px;
+                    line-height: 1.5;
+                    letter-spacing: 0.8px;
+                }
+            }
+        }
+
+        &__textchild {
+            padding-right: 26px;
+        }
+    }
+}

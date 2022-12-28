@@ -1,0 +1,104 @@
+.c-qa {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 87px;
+    @include sp {
+        margin-top: -2px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 39px;
+    }
+
+    &__title {
+        --fz: 3.6rem;
+        font-size: var(--fz);
+        line-height: 1;
+        color: $primary-color;
+        letter-spacing: 4.7px;
+        text-align: center;
+        @include sp {
+            font-size: 20px;
+            letter-spacing: 1.6px;
+        }
+    }
+
+    &__list {
+        margin-top: 52px;
+        @include sp {
+            margin-top: 23px;
+        }
+    }
+
+    &__item {
+        margin-top: 45px;
+
+        &:nth-child(2) {
+            .c-qa {
+                &__itemtop {
+                    @include sp {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(n+3) {
+            @include sp {
+                display: none;
+            }
+        }
+        @include sp {
+            
+            margin-top: 25px;
+        }
+
+        &top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+
+            &:nth-child(2) {
+                @include sp {
+                    margin-bottom: 10px;
+                }
+           
+            }
+            @include sp {
+                margin-bottom: 4px;
+            }
+        }
+
+        &title {
+            margin-left: 14px;
+            font-size: 1.4rem;
+            line-height: 2;
+            color: #176b6a;
+            letter-spacing: 1.5px;
+            @include sp {
+                margin-left: 9px;
+                font-size: 1.3rem;
+                line-height: 1.8;
+                letter-spacing: 1.7px;
+            }
+        }
+
+        &desc {
+            letter-spacing: 1.4px;
+            line-height: 1.5;
+            @include sp {
+                font-size: 1.3rem;
+                line-height: 1.7;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        &icon {
+            width: 59px;
+            object-fit: cover;
+            @include sp {
+                width: 40px;
+            }
+        }
+    }
+}
+

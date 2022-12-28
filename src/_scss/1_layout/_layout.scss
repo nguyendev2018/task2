@@ -1,0 +1,86 @@
+/* layout
+------------------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    //TODO fz14 +lh21
+    font-family: $font;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $black33;
+    line-height: 1.5;
+    background: url("./assets/img/bg/bg-header.png");
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px;
+    letter-spacing: 0.1em;
+
+    // &.overflow {
+    //     overflow: hidden;
+    // }
+    @include sp {
+        padding: 15px;
+ 
+    }
+
+    // &::before {
+    //     --spacing: 60px;
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     top: 50%;
+    //     transform: translate(-50%, -50%);
+    //     background: $white;
+    //     width: calc(100% - var(--spacing));
+    //     height: calc(100% - var(--spacing));
+    //     z-index: -1;
+    //     @include sp {
+    //         --spacing: 30px;
+    //     }
+    // }
+
+}
+
+//-------------------------------------------------------
+.l-container {
+    background: #fff;
+
+    &--w1030 {
+        max-width: $container--w1030 + 30px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &--w863 {
+        max-width: $container--w863 + 30px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &--w1120 {
+        max-width: $container--w1120 + 30px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &--w1063 {
+        max-width: $container--w1063 + 30px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+//-------------------------------------------------------

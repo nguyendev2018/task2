@@ -1,0 +1,333 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="p-home">
+    <section class="c-uses l-container--w1120 p-scroll" id="section_2">
+      <div class="c-uses__boxtitle">
+        <p class="c-uses__titlesmall">使い方いろいろ</p>
+        <h2 class="c-uses__titlebig">毎日にハッカ油</h2>
+      </div>
+      <div class="c-uses__list">
+        <div class="c-uses__listtop">
+          <a class="c-uses__item c-uses__itembottle">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/bottle-label.png">
+              <img src="/assets/img/appliances/bottle-label.png" alt="ハッカ水" class="c-uses__itemimg">
+            </picture>
+            <div class="c-uses__itemtext">
+              ハッカ水
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itemjar">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/jar.png">
+              <img src="/assets/img/appliances/jar.png" alt="ハッカ水">
+            </picture>
+
+            <div class="c-uses__itemtext">
+              ハッカの虫除けスプレー
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itemiron">
+            <img src="/assets/img/appliances/iron.png" alt="ハッカのリネンウォーター" class="c-uses__itemimg">
+            <div class="c-uses__itemtext">ハッカのリネンウォーター
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itemaerosol ">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/aerosol.png">
+              <img src="/assets/img/appliances/aerosol.png" alt="bottle">
+            </picture>
+            <div class="c-uses__itemtext">
+              ハッカのエアフレッシュナー
+            </div>
+          </a>
+        </div>
+        <div class="c-uses__listbottom">
+          <a class="c-uses__item c-uses__itembulb">
+            <img src="/assets/img/appliances/bulb.png" alt="ハッカの清涼スプレー" class="c-uses__itemimg">
+            <div class="c-uses__itemtext">
+              ハッカの清涼スプレー
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itemface ">
+            <picture>
+              <source media="(max-width:767px)" srcset="/assets/img/appliances/mobile/mask-label.png">
+              <img src="/assets/img/appliances/mask-label.png" alt="mask-label" class="c-uses__itemimg">
+            </picture>
+            <div class="c-uses__itemtext">
+              ハッカマスク
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itempillow">
+            <img src="/assets/img/appliances/pillow.png" alt="ハッカで安息" class="c-uses__itemimg">
+            <div class="c-uses__itemtext">
+              ハッカで安息
+            </div>
+          </a>
+          <a class="c-uses__item c-uses__itembath">
+            <img src="/assets/img/appliances/bathtub.png" alt="ハッカの入浴剤" class="c-uses__itemimg">
+            <div class="c-uses__itemtext">
+              ハッカの入浴剤
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <section class="c-point" id="section_3">
+      <div class="c-pointnew " id="is-pointnew">
+        <div class="l-container--w1030">
+          <div class="c-point__boxtitle">
+            <div class="c-point__number">
+                <img src="assets/img/point/point1/number.png" alt="point-number" class="c-point__numberimg">
+              <hr class="c-line">
+              
+              <div class="c-point__slogan">Point</div>
+            </div>
+            <div class="c-point__info">
+              <h2 class="c-point__infotitle">気持ちリフレッシュ</h2>
+              <div class="c-point__infodesc u-showhide">
+                鼻や口から入った香りの信号は、視床下部などに直接作用し <br>
+                気分をリフレッシュさせてくれます。
+              </div>
+            </div>
+
+          </div>
+          <div class="c-point__infodesc u-hideshow">
+            鼻や口から入った香りの信号は、視床下部などに直接作用し
+            気分をリフレッシュさせてくれます。
+          </div>
+          <div class="c-point__list">
+            <% if(typeof points !='undefined' ) { %>
+              <% points.point1 && points.point1.forEach(item=> { %>
+                <div class="c-point__item">
+                  <div class="c-point__itemimg">
+                    <img src="<%= item.url %>" alt="" class="img-100">
+                    <div class="c-point__itembutton">
+                      <img src="./assets/img/button/img-more.png" alt="img-more">
+                    </div>
+                  </div>
+                  <div class="c-point__itemlayer">
+                    <h3 class="c-point__itemtitle">
+                      <%= item.title %>
+                    </h3>
+                    <p class="c-point__itemdesc">
+                      <%= item.desc %>
+                    </p>
+                    <a href="#" class="c-btn__primary c-btn__primary--text">
+                      ハッカ油コラムへ
+                    </a>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+          </div>
+        </div>
+      </div>
+      <div class="c-pointhot page-scroll">
+        <div class="l-container--w1030">
+          <div class="c-point__boxtitle">
+            <div class="c-point__number">
+                              <img src="assets/img/point/point2/number.png" alt="point-number" class="c-point__numberimg c-point__numberimg2">
+              <div class="c-line"></div>
+              <div class="c-point__slogan">Point</div>
+            </div>
+            <div class="c-point__info">
+              <h2 class="c-point__infotitle">気持ちリフレッシュ</h2>
+              <div class="c-point__infodesc u-showhide">
+                メントールの刺激ですっきりクールダウン。 <br>
+                ミントの香りで気分も爽快！
+              </div>
+            </div>
+          </div>
+          <div class="c-point__infodesc u-hideshow">
+            メントールの刺激ですっきりクールダウン。 <br>
+            ミントの香りで気分も爽快！
+          </div>
+          <div class="c-point__list">
+            <% if(typeof points !='undefined' ) { %>
+              <% points.point2 && points.point2.forEach(item=> { %>
+                <div class="c-point__item">
+                  <div class="c-point__itemimg">
+                    <img src="<%= item.url %>" alt="気持ちリフレッシュ" class="img-100">
+                    <div class="c-point__itembutton">
+                      <img src="./assets/img/button/img-more.png" alt="img-more" >
+                    </div>
+                  </div>
+                  <div class="c-point__itemlayer">
+                    <h3 class="c-point__itemtitle">
+                      <%= item.title %>
+                    </h3>
+                    <p class="c-point__itemdesc">
+                      <%= item.desc %>
+                    </p>
+                    <a href="#" class="c-btn__primary c-btn__primary--text">
+                      ハッカ油コラムへ
+                    </a>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+          </div>
+        </div>
+      </div>
+      <div class="c-pointfeature">
+        <div class="l-container--w1030">
+          <div class="c-point__boxtitle">
+            <div class="c-point__number">
+              <img src="assets/img/point/point3/number.png" alt="point-number" class="c-point__numberimg  c-point__numberimg3">
+
+              <div class="c-line"></div>
+              <div class="c-point__slogan">Point</div>
+            </div>
+            <div class="c-point__info">
+              <h2 class="c-point__infotitle">ハウスキーピング</h2>
+              <div class="c-point__infodesc u-showhide">
+                ハッカ油に含まれるメントールは、お部屋のスッキリを演出。<br>
+                お家の害虫対策にもおすすめです。
+              </div>
+            </div>
+
+          </div>
+          <div class="c-point__infodesc u-hideshow">
+            ハッカ油に含まれるメントールは、お部屋のスッキリを演出。
+            お家の害虫対策にもおすすめです。
+          </div>
+          <div class="c-point__list">
+            <% if(typeof points !='undefined' ) { %>
+              <% points.point3 && points.point3.forEach(item=> { %>
+                <div class="c-point__item ">
+                  <div class="c-point__itemimg">
+                    <img src="<%= item.url %>" alt="" class="img-100">
+                    <div class="c-point__itembutton">
+                      <img src="./assets/img/button/img-more.png" alt="img-more">
+                    </div>
+                  </div>
+                  <div class="c-point__itemlayer">
+                    <h3 class="c-point__itemtitle">
+                      <%= item.title %>
+                    </h3>
+                    <p class="c-point__itemdesc">
+                      <%= item.desc %>
+                    </p>
+                    <a href="#" class="c-btn__primary c-btn__primary--text">
+                      ハッカ油コラムへ
+                    </a>
+                  </div>
+                </div>
+                <% }) %>
+                  <% } %>
+          </div>
+        </div>
+      </div>
+
+      <section class="c-brand l-container--w1120">
+        <h2 class="c-brand__title">お買い求めは全国のドラッグストア<br class="is-sp--only">、またはこちらから</h2>
+        <div class="c-brand__list">
+          <% if(typeof brands !='undefined' ) { %>
+            <% brands.imgs && brands.imgs.forEach(item=> { %>
+              <a class="c-brand__item" href="#" target="_blank">
+                <img src="<%= item.img %>" alt="<%= item.alt %>" class="img-100">
+              </a>
+              <% }) %>
+                <% } %>
+        </div>
+        <p class="c-brand__bottom">Amazon、Amazon.co.jp、及びAmazon.co.jpロゴはAmazon.com, Inc.又はその関連会社の商標です。</p>
+      </section>
+    </section>
+
+    <section class="c-qa l-container--w1030 page-scroll" id="section_4">
+      <h2 class="c-qa__title">Q&A</h2>
+      <dl class="c-qa__list">
+        <% if(typeof medicans !='undefined' ) { %>
+          <% medicans.medican && medicans.medican.forEach(item=> { %>
+            <div class="c-qa__item">
+              <dt class="c-qa__itemtop">
+                <img src="/assets/img/q&a/icon.png" alt="icon" class="c-qa__itemicon">
+                <div class="c-qa__itemtitle">
+                  <%= item.title %>
+                </div>
+              </dt>
+              <dd class="c-qa__itemdesc">
+                <%= item.desc %>
+              </dd>
+            </div>
+            <% }) %>
+              <% } %>
+      </dl>
+
+
+
+    </section>
+    <div class="c-medicine l-container--w1030" id="section_5">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/img/bg/bg-medicine/mobile.jpg"
+            class="img-100 c-medicine__img">
+          <img class="c-medicine__desktop c-medicine__img img-hauto" src="./assets/img/bg/bg-medicine/desktop.jpg"
+            alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
+        </picture>
+    </div>
+    <section class="c-col l-container--w1030 page-scroll" id="section_6">
+      <% if(typeof cols !='undefined' ) { %>
+        <% cols.col && cols.col.forEach(item=> { %>
+            <div class="c-col__box">
+              <div class="c-col__boxinfo">
+                <a href="#" class="c-col__boxtop">
+                  <div class="c-col__itemimg">
+                    <img src="<%= item.img %>" alt="<%= item.title %>" class="img-fluid">
+                    <div class="c-col__boxlayer">
+                      <img src="./assets/img/q&a/hakkayu-column.png" alt="
+                      風邪をひきやすい冬も安心" class="c-point__column">
+                      <span class="c-col__itemnumber">
+                        <%= item.number %>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="c-col__boxtext">
+                    <p class="c-col__textdesc">
+                      <%= item.title %>
+                    </p>
+                    <h3 class="c-col__texttitle">
+                      <%= item.titlebig %>
+                    </h3>
+  
+                  </div>
+                </a>
+                <div class="c-col__bottom">
+                  <p class="c-col__desc">
+                    <%- item.desc %>
+                  </p>
+                  <a href="#" class="c-col__link">詳しく見る</a>
+  
+                </div>
+  
+                <div class="c-col__button">
+                  <img src="./assets/img/button/toggle.svg" alt="icon-toggle" s>
+                </div>
+              </div>
+              <div class="c-col__boxarrow">
+                <picture>
+                  <source media="(min-width:767px)" srcset="./assets/img/q&a/arrow/arrow-right.svg">
+                  <img src="./assets/img/q&a/arrow/arrow-down.svg" alt="arrow-down">
+                </picture>
+              </div>
+            </div>
+          
+          
+          <% }) %>
+            <% } %>
+    </section>
+
+
+  </main>
+
+  <!-- @@content -->
+
+  <!-- @script -->
+
+  <!-- @@script -->
