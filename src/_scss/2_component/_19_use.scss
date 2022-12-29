@@ -10,7 +10,7 @@
     }
     @include sp {
         padding-top: 27px;
-        padding-bottom: 27px;
+        padding-bottom: 87px;
         padding-left: 26.5px;
         padding-right: 26.5px;
     }
@@ -62,7 +62,10 @@
             margin-top: -20px;
             margin: 0 auto;
         }
-    
+        @include sp {
+            max-width: 375px;
+        }
+
         &top,
         &bottom {
             display: flex;
@@ -86,7 +89,6 @@
         }
 
         &bottom {
-         
             margin-top: 70px;
             @include tab {
                 margin-top: -16px;
@@ -104,16 +106,9 @@
             width: 50%;
         }
         @include sp {
-            width: max-content;
+            width: 100%;
         }
-  
-      
 
-       
-       
-       
-      
-    
         &box {
             display: flex;
             flex-direction: column;
@@ -122,8 +117,6 @@
             position: relative;
         }
     }
-
-   
 
     .c-uses__itemimg {
         position: relative;
@@ -181,12 +174,13 @@
     @include tab {
         top: 0;
         left: 0;
+        justify-content: flex-end;
     }
     @include sp {
         flex-direction: row-reverse;
         justify-content: flex-start;
         margin-top: 60px;
-        left: 80px;
+        left: -12px;
     }
 
     img {
@@ -275,17 +269,16 @@
     @include tab {
         right: 0;
         margin-top: 60px;
-
+        justify-content: flex-end;
     }
 
     @include sp {
         margin-top: 0;
-        justify-content: flex-end;
+        justify-content: flex-start;
         flex-direction: row-reverse;
         margin-right: 0;
-        right: -11px;
         top: 11px;
-          
+        right: 14px;
     }
 
     img {
@@ -336,6 +329,7 @@
         width: 37px;
     }
     @include tab {
+        align-items: flex-end;
         top: 0;
         left: 0;
     }
@@ -368,6 +362,8 @@
                 }
                 @include tab {
                     margin-left: -12px;
+                    position: relative;
+                    top: -60px;
                 }
                 @include sp {
                     margin-top: -4px;
@@ -376,6 +372,7 @@
                     margin-left: 0;
                     margin-bottom: 0;
                     letter-spacing: 0.7px;
+                    top: -29px;
                 }
             }
         }
@@ -394,12 +391,14 @@
         top: 0;
         left: 0;
         margin-top: 60px;
+        justify-content: flex-end;
     }
     @include sp {
-        top: 21px;
-        left: 78px;
-        margin-top: 60px;
+        top: 58px;
+        left: 40px;
+        margin-top: 0;
         flex-direction: row-reverse;
+        justify-content: flex-start;
    
     }
     // @include tab1200 {
@@ -414,6 +413,9 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
+                @include tab {
+                    top: 0;
+                }
                 @include sp {
                     width: 137px;
                     left: -56px;
@@ -428,8 +430,11 @@
                 @include  tab1200 {
                     padding-left: 25px;
                 }
+                @include tab {
+                    margin-left: -72px;
+                }
                 @include sp {
-                    margin-top: -20px;
+                    margin-top: 24px;
                     margin-left: 0;
                     padding-left: 0;
                     padding-right: 28px;
@@ -454,12 +459,15 @@
         top: 0;
         left: 0;
         justify-content: flex-end;
+        margin-top: 60px;
     }
 
     @include sp {
-        top: 12px;
+        top: 72px;
         left: 22px;
         flex-direction: row;
+        margin-top: 0;
+        justify-content: flex-start;
     }
     // @include tab1200 {
     //     width: 200px;
@@ -507,12 +515,14 @@
     top: -33px;
     flex-direction: row-reverse;
     @include tab {
+        margin-top: 60px;
         left: 0;
         top: 0;
     }
     @include sp {
-        left: 74px;
-        top: 26px;
+        margin-top: 0;
+        left: -12px;
+        top: 86px;
     }
 
     .c-uses {

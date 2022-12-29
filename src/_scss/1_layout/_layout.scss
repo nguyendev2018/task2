@@ -19,9 +19,9 @@ body {
     padding: 30px;
     letter-spacing: 0.1em;
 
-    // &.overflow {
-    //     overflow: hidden;
-    // }
+    &.u-overflow {
+        overflow: hidden;
+    }
     @include sp {
         padding: 15px;
  

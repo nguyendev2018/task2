@@ -6,7 +6,7 @@
 
   <!-- @content -->
   <main class="p-home">
-    <section class="c-uses l-container--w1120 p-scroll" id="section_2">
+    <section class="c-uses l-container--w1120 p-scroll" id="uses">
       <div class="c-uses__boxtitle">
         <p class="c-uses__titlesmall">使い方いろいろ</p>
         <h2 class="c-uses__titlebig">毎日にハッカ油</h2>
@@ -79,14 +79,14 @@
 
       </div>
     </section>
-    <section class="c-point" id="section_3">
+    <section class="c-point p-scroll" id="point">
       <div class="c-pointnew " id="is-pointnew">
         <div class="l-container--w1030">
           <div class="c-point__boxtitle">
             <div class="c-point__number">
-                <img src="assets/img/point/point1/number.png" alt="point-number" class="c-point__numberimg">
+              <img src="assets/img/point/point1/number.png" alt="point-number" class="c-point__numberimg">
               <hr class="c-line">
-              
+
               <div class="c-point__slogan">Point</div>
             </div>
             <div class="c-point__info">
@@ -107,9 +107,12 @@
               <% points.point1 && points.point1.forEach(item=> { %>
                 <div class="c-point__item">
                   <div class="c-point__itemimg">
-                    <img src="<%= item.url %>" alt="" class="img-100">
+                    <img src="<%= item.url %>" alt="<%= item.title %>" class="l-img--100">
                     <div class="c-point__itembutton">
-                      <img src="./assets/img/button/img-more.png" alt="img-more">
+                      <picture>
+                        <source media="(max-width:767px)" srcset="./assets/img/button/img-more__sp.png">
+                        <img src="./assets/img/button/img-more.png" alt="img-more" class="c-point__imgbutton">
+                      </picture>
                     </div>
                   </div>
                   <div class="c-point__itemlayer">
@@ -133,7 +136,8 @@
         <div class="l-container--w1030">
           <div class="c-point__boxtitle">
             <div class="c-point__number">
-                              <img src="assets/img/point/point2/number.png" alt="point-number" class="c-point__numberimg c-point__numberimg2">
+              <img src="assets/img/point/point2/number.png" alt="point-number"
+                class="c-point__numberimg c-point__numberimg2">
               <div class="c-line"></div>
               <div class="c-point__slogan">Point</div>
             </div>
@@ -154,9 +158,12 @@
               <% points.point2 && points.point2.forEach(item=> { %>
                 <div class="c-point__item">
                   <div class="c-point__itemimg">
-                    <img src="<%= item.url %>" alt="気持ちリフレッシュ" class="img-100">
+                    <img src="<%= item.url %>" alt="気持ちリフレッシュ" class="l-img--100">
                     <div class="c-point__itembutton">
-                      <img src="./assets/img/button/img-more.png" alt="img-more" >
+                      <picture>
+                        <source media="(max-width:767px)" srcset="./assets/img/button/img-more__sp.png">
+                        <img src="./assets/img/button/img-more.png" alt="img-more" class="c-point__imgbutton">
+                      </picture>
                     </div>
                   </div>
                   <div class="c-point__itemlayer">
@@ -180,7 +187,8 @@
         <div class="l-container--w1030">
           <div class="c-point__boxtitle">
             <div class="c-point__number">
-              <img src="assets/img/point/point3/number.png" alt="point-number" class="c-point__numberimg  c-point__numberimg3">
+              <img src="assets/img/point/point3/number.png" alt="point-number"
+                class="c-point__numberimg  c-point__numberimg3">
 
               <div class="c-line"></div>
               <div class="c-point__slogan">Point</div>
@@ -203,9 +211,12 @@
               <% points.point3 && points.point3.forEach(item=> { %>
                 <div class="c-point__item ">
                   <div class="c-point__itemimg">
-                    <img src="<%= item.url %>" alt="" class="img-100">
+                    <img src="<%= item.url %>" alt="" class="l-img--100">
                     <div class="c-point__itembutton">
-                      <img src="./assets/img/button/img-more.png" alt="img-more">
+                      <picture>
+                        <source media="(max-width:767px)" srcset="./assets/img/button/img-more__sp.png">
+                        <img src="./assets/img/button/img-more.png" alt="img-more" class="c-point__imgbutton">
+                      </picture>
                     </div>
                   </div>
                   <div class="c-point__itemlayer">
@@ -232,7 +243,7 @@
           <% if(typeof brands !='undefined' ) { %>
             <% brands.imgs && brands.imgs.forEach(item=> { %>
               <a class="c-brand__item" href="#" target="_blank">
-                <img src="<%= item.img %>" alt="<%= item.alt %>" class="img-100">
+                <img src="<%= item.img %>" alt="<%= item.alt %>" class="l-img--100">
               </a>
               <% }) %>
                 <% } %>
@@ -241,7 +252,7 @@
       </section>
     </section>
 
-    <section class="c-qa l-container--w1030 page-scroll" id="section_4">
+    <section class="c-qa l-container--w1030 p-scroll" id="qa">
       <h2 class="c-qa__title">Q&A</h2>
       <dl class="c-qa__list">
         <% if(typeof medicans !='undefined' ) { %>
@@ -264,61 +275,61 @@
 
 
     </section>
-    <div class="c-medicine l-container--w1030" id="section_5">
-        <picture>
-          <source media="(max-width: 767px)" srcset="./assets/img/bg/bg-medicine/mobile.jpg"
-            class="img-100 c-medicine__img">
-          <img class="c-medicine__desktop c-medicine__img img-hauto" src="./assets/img/bg/bg-medicine/desktop.jpg"
-            alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
-        </picture>
+    <div class="c-medicine l-container--w1030 p-scroll" id="medicine">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./assets/img/bg/bg-medicine/mobile.jpg"
+          class="l-img--100 c-medicine__img">
+        <img class="c-medicine__desktop c-medicine__img img-hauto" src="./assets/img/bg/bg-medicine/desktop.jpg"
+          alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
+      </picture>
     </div>
-    <section class="c-col l-container--w1030 page-scroll" id="section_6">
+    <section class="c-col  p-scroll" id="col">
       <% if(typeof cols !='undefined' ) { %>
         <% cols.col && cols.col.forEach(item=> { %>
-            <div class="c-col__box">
-              <div class="c-col__boxinfo">
-                <a href="#" class="c-col__boxtop">
-                  <div class="c-col__itemimg">
-                    <img src="<%= item.img %>" alt="<%= item.title %>" class="img-fluid">
-                    <div class="c-col__boxlayer">
-                      <img src="./assets/img/q&a/hakkayu-column.png" alt="
+          <div class="c-col__box">
+            <div class="c-col__boxinfo">
+              <a href="#" class="c-col__boxtop">
+                <div class="c-col__itemimg">
+                  <img src="<%= item.img %>" alt="<%= item.title %>" class="img-fluid">
+                  <div class="c-col__boxlayer">
+                    <img src="./assets/img/q&a/hakkayu-column.png" alt="
                       風邪をひきやすい冬も安心" class="c-point__column">
-                      <span class="c-col__itemnumber">
-                        <%= item.number %>
-                      </span>
-                    </div>
+                    <span class="c-col__itemnumber">
+                      <%= item.number %>
+                    </span>
                   </div>
-                  <div class="c-col__boxtext">
-                    <p class="c-col__textdesc">
-                      <%= item.title %>
-                    </p>
-                    <h3 class="c-col__texttitle">
-                      <%= item.titlebig %>
-                    </h3>
-  
-                  </div>
-                </a>
-                <div class="c-col__bottom">
-                  <p class="c-col__desc">
-                    <%- item.desc %>
+                </div>
+                <div class="c-col__boxtext">
+                  <p class="c-col__textdesc">
+                    <%= item.title %>
                   </p>
-                  <a href="#" class="c-col__link">詳しく見る</a>
-  
+                  <h3 class="c-col__texttitle">
+                    <%= item.titlebig %>
+                  </h3>
+
                 </div>
-  
-                <div class="c-col__button">
-                  <img src="./assets/img/button/toggle.svg" alt="icon-toggle" s>
-                </div>
+              </a>
+              <div class="c-col__bottom">
+                <p class="c-col__desc ">
+                  <%- item.desc %>
+                </p>
+                <a href="#" class="c-col__link">詳しく見る</a>
+
               </div>
-              <div class="c-col__boxarrow">
-                <picture>
-                  <source media="(min-width:767px)" srcset="./assets/img/q&a/arrow/arrow-right.svg">
-                  <img src="./assets/img/q&a/arrow/arrow-down.svg" alt="arrow-down">
-                </picture>
+
+              <div class="c-col__button">
+                <img src="./assets/img/button/toggle.svg" alt="icon-toggle" s>
               </div>
             </div>
-          
-          
+            <div class="c-col__boxarrow">
+              <picture>
+                <source media="(min-width:767px)" srcset="./assets/img/q&a/arrow/arrow-right.svg">
+                <img src="./assets/img/q&a/arrow/arrow-down.svg" alt="arrow-down">
+              </picture>
+            </div>
+          </div>
+
+
           <% }) %>
             <% } %>
     </section>

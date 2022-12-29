@@ -1,3 +1,5 @@
+
+
 .c-qa {
     padding-left: 100px;
     padding-right: 100px;
@@ -9,7 +11,7 @@
         padding-top: 39px;
     }
 
-    &__title {
+    .c-qa__title {
         --fz: 3.6rem;
         font-size: var(--fz);
         line-height: 1;
@@ -22,14 +24,14 @@
         }
     }
 
-    &__list {
-        margin-top: 52px;
+    .c-qa__list {
+        margin-top: 51px;
         @include sp {
             margin-top: 23px;
         }
     }
 
-    &__item {
+    .c-qa__item {
         margin-top: 45px;
 
         &:nth-child(2) {
@@ -52,53 +54,53 @@
             margin-top: 25px;
         }
 
-        &top {
-            display: flex;
-            align-items: center;
-            margin-bottom: 7px;
+    }
 
-            &:nth-child(2) {
-                @include sp {
-                    margin-bottom: 10px;
-                }
-           
-            }
+    .c-qa__itemtop {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+
+        &:nth-child(2) {
             @include sp {
-                margin-bottom: 4px;
+                margin-bottom: 10px;
             }
+       
         }
-
-        &title {
-            margin-left: 14px;
-            font-size: 1.4rem;
-            line-height: 2;
-            color: #176b6a;
-            letter-spacing: 1.5px;
-            @include sp {
-                margin-left: 9px;
-                font-size: 1.3rem;
-                line-height: 1.8;
-                letter-spacing: 1.7px;
-            }
+        @include sp {
+            margin-bottom: 3px;
         }
+    }
 
-        &desc {
-            letter-spacing: 1.4px;
-            line-height: 1.5;
-            @include sp {
-                font-size: 1.3rem;
-                line-height: 1.7;
-                letter-spacing: 1.2px;
-            }
+    .c-qa__itemtitle {
+        margin-left: 15px;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: #176b6a;
+        letter-spacing: 1.4px;
+        @include sp {
+            margin-left: 9px;
+            font-size: 1.3rem;
+            line-height: 1.8;
         }
+    }
 
-        &icon {
-            width: 59px;
-            object-fit: cover;
-            @include sp {
-                width: 40px;
-            }
+    .c-qa__itemdesc {
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+        @include sp {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            letter-spacing: 1.3px;
+            line-break: anywhere;
+        }
+    }
+
+    .c-qa__itemicon {
+        width: 59px;
+        object-fit: cover;
+        @include sp {
+            width: 40px;
         }
     }
 }
-

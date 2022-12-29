@@ -1,21 +1,24 @@
 
 .c-footer {
-    padding-bottom: 60px;
+    padding-bottom: 63px;
+    @include sp {
+        padding-bottom: 58px;
+    }
 
     .c-footer__list {
         display: flex;
         justify-content: space-between;
-        margin-top: 110px;
+        margin-top: 112px;
         @include sp { 
             flex-direction: column;
-            margin-top: 55px;
+            margin-top: 54px;
         }
     }
 
     .c-footer__banner {
         @include sp {
-            padding-left: 34px;
-            padding-right: 34px;
+            padding-left: 32.5px;
+            padding-right: 32.5px;
         }
     }
 
@@ -25,6 +28,7 @@
         margin: 0 auto;
         @include sp {
             border-radius: 10px;
+            height: 250px;
         }
 
         img {
@@ -44,9 +48,15 @@
         &:last-child {
             margin-bottom: 0;
             margin-top: -5px;
+            @include sp {
+                margin-top: 4px;
+            }
         }
         @include sp {
             font-size: 1.3rem;
+            font-feature-settings: "palt";
+            letter-spacing: 0.01em;
+            line-height: 1.75em;
         }
     }
 
@@ -55,19 +65,37 @@
         margin-left: 1px;
         @include sp {
             font-size: 1.3rem;
+            letter-spacing: 0;
         }
     }
 
     .c-footer__logo {
-        width: 145px;
+        position: relative;
+        top: 9px;
         @include sp {
-            width: 150px;
+            width: 140px;
             display: block;
             margin: 0 auto;
         }
     }
 
+    .c-footer__phone {
+        @include sp {
+            padding-left: 4px;
+            letter-spacing: 0.01em;
+        }
+    }
+
     .c-footer__time {
-        margin-left: 9px;
+        @include sp {
+            padding-left: 5px;
+        }
+  
+    }
+
+    .c-footer__logo {
+        @include sp {
+            margin-top: 14px;
+        }
     }
 }

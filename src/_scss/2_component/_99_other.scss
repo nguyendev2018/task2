@@ -4,36 +4,41 @@ other
 
 /*
 ------------------------------------------------------------*/
-.p-leaf {
-    pointer-events: none;
 
-    &__top,
-    &__right {
+.p-leaf {
+    .p-leaf__top,
+    .p-leaf__right {
         position: fixed;
         z-index: 6;
         transition: all 0.5s linear;
-        
     }
 
-    &__top {
+    .p-leaf__top {
         top: 0;
-        left: 687px;
-        transition: all 0.5s linear;
+        left: 35.8%;
         width: 302px;
         height: 213px;
+
+        &.is-scroll {
+            top: -40px;
+        }
         @include sp {
             width: 114px;
             height: auto;
             top: 0;
             left: 95px;
         }
+       
     }
 
-    &__right {
+    .p-leaf__right {
         top: 468px;
         right: -27px;
         width: 267px;
-        height: 352px;
+
+        &.is-scroll {
+            right: -40px;
+        }
         @include tab {
             width: 150px;
         }
@@ -53,5 +58,22 @@ other
     border-bottom: 2px solid $black00;
     @include sp {
         transform: translateX(-4px);
+    }
+}
+
+.c-slider__link {
+    color: #fff;
+    font-size: 2.4rem;
+    font-feature-settings: "palt";
+    font-feature-settings: "palt";
+    letter-spacing: 0.28em;
+    display: block;
+    border-radius: 27px;
+    height: 100%;
+    text-align: center;
+    @include sp {
+        font-size: 1.6rem;
+        line-height: 2.2em;
+        letter-spacing: 0.28em;
     }
 }
